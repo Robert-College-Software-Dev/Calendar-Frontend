@@ -1,4 +1,4 @@
-## How to Run
+# How to Run
 
 ### `npm start`
 
