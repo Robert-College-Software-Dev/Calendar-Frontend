@@ -1,9 +1,14 @@
-import React, {useEffect, useState} from 'react';
-import {getDeneme} from '../services/deneme';
+import React, { useEffect, useState } from 'react';
+import { getDeneme } from '../services/deneme';
 import CopyToClipboardComponent from '../components/CopyToClipboard';
 
 export default function Deneme() {
+  //hooks
+
+  // let, const 
+
   const [denemeText, setDenemeText] = useState('');
+
   useEffect(() => {
     const fetchDeneme = async () => {
       setDenemeText(await getDeneme());
