@@ -1,8 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import Layout from './Layout';
+import { useMediaQuery } from "react-responsive";
+import { useDarkMode } from 'usehooks-ts';
+
 
 function App() {
+
+  const root = window.document.documentElement;
+  root.classList.add("dark");
+
+  // save theme to local storage
+  localStorage.setItem('theme', "dark");
+
+
+
   return (
     <div className='App'>
       <Layout />
